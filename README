@@ -1,0 +1,33 @@
+1. Intro
+~~~~~~~~
+Weelogger was created out of the need to have a compact, lightweight and modular logging library.
+All libraries that I found were either too monolithic and primitive or way too complex.
+
+2. Design
+~~~~~~~~~
+The inspiration was Boost::Log's design. At the centre of the library is the core (thread-safe, if enabled).
+The core should stay as compact as possible. The only thing that is predefined in the core are the logging levels.
+The other components are modules that can be inserted as needed.
+Attributes prepend some user-defined information to the string. Examples would be: date, time, PID.
+Sinks are responsible for writing the output stream to the device of choice. The default sinks included with the
+distribution are stdout sink and file sink.
+The user is free to develop and add as many attributes and sinks as one would like.
+
+3. Build
+~~~~~~~~
+The build system is made of 1 plain vanilla makefile. In order to build the library and tests, create an empty
+directory anywhere on your system. Then type `make -f <path_to_weelogger_dir>/Makefile`.
+This will build by default just the static and dynamic libraries. The only header file that needs to be included 
+is the wl_logger.h.
+The C++ wrapper can be found in the cpp folder. It is built as a part of the default build.
+The tests are scarce at the moment and can be found in the folder apps. The test build targets are basic_test, file_test,
+cpp_test.
+
+4. Use
+~~~~~~
+The library is licensed under LGPL v3.
+For usage examples check the apps directory.
+
+5. Authors
+~~~~~~~~~~
+Konstantin Bakanov and Nhat Phuong Tran
