@@ -28,6 +28,10 @@ cpp_test.
 The library is licensed under LGPL v3.
 For usage examples check the apps directory.
 
-5. Authors
+5. Author
 ~~~~~~~~~~
-Konstantin Bakanov and Nhat Phuong Tran
+Konstantin Bakanov
+
+6. Contributors
+~~~~~~~~~~~~~~~
+Nhat Phuong Tran
