@@ -1,3 +1,25 @@
+* =================================================================
+* This file is part of “Ecoscale Weelogger Library software” (hereinafter the “Software”)
+*
+* =================================================================
+* Developer(s):     Konstantin Bakanov, The Queen's University of Belfast, Northern Ireland.
+*                   Nhat Phuong Tran, The Queen's University of Belfast, Northern Ireland.
+* Principal
+* Investigator(s):      Prof. Dimitrios Nikilopoulos, The Queen's University of Belfast, Northern Ireland.
+*
+* The project (“Energy-efficient Heterogeneous COmputing at exaSCALE - EcoScale”) leading to this Software has received 
+* funding from the European Commission under 671632 — ECOSCALE — H2020-FETHPC-2014/H2020-FETHPC-2014.
+*
+* Copyright 2015-2018, The Queen's University of Belfast, Northern Ireland
+* =================================================================
+* Licensed under the GNU Lesser General Public License, as published by the Free Software Foundation, either version 3 or at your option any later version (hereinafter the "License");
+* you must not use this Software except in compliance with the terms of the License.
+*
+* Unless required by applicable law or agreed upon in writing, this Software is distributed on an "AS IS" BASIS, WITHOUT ANY WARRANTY;
+* without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, neither express nor implied.
+* For details see terms of the License (see attached file: README. The License is also available at https://www.gnu.org/licenses/lgpl-3.0.en.html
+* =================================================================
+
 1. Intro
 ~~~~~~~~
 Weelogger was created out of the need to have a compact, lightweight and modular logging library.
@@ -28,10 +50,3 @@ cpp_test.
 The library is licensed under LGPL v3.
 For usage examples check the apps directory.
 
-5. Author
-~~~~~~~~~~
-Konstantin Bakanov
-
-6. Contributors
-~~~~~~~~~~~~~~~
-Nhat Phuong Tran

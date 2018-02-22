@@ -83,6 +83,7 @@ $(eval $(call build_macro_cpp,   $(SOURCE_DIR)/cpp/%.cpp))
 WEE_LOGGER_OBJS=$(C_SRCS:%.c=%.o) $(CPP_SRCS:%.cpp=%.o) 
 
 wl_logger_objs : $(WEE_LOGGER_OBJS)
+	echo "$^" > .wlg.objs
 
 wl_logger_lib: $(WEE_LOGGER_OBJS)
 	ar rcs libweelogger.a $(WEE_LOGGER_OBJS)
