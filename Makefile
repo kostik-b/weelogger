@@ -15,6 +15,7 @@ all : wl_logger_lib
 C_SRCS=wl_core.c wl_basic_attributes.c wl_stdout_sink.c wl_file_sink.c
 CPP_SRCS=WeeLogger.cpp
 
+DESTDIR ?= ./
 
 # ---------------- C -----------------------------
 
@@ -94,6 +95,15 @@ basic_test : $(WEE_LOGGER_OBJS) basic_test.o
 
 file_test : $(WEE_LOGGER_OBJS) file_test.o
 	$(CXX) $(CFLAGS) $^ -o $@
+
+install : wl_logger_lib
+	install -d $(DESTDIR)/lib
+	install -d $(DESTDIR)/include
+	install  -m 0444 $(SOURCE_DIR)/*h $(DESTDIR)/include
+	install  -m 0444 $(SOURCE_DIR)/sinks/*h $(DESTDIR)/include
+	install  -m 0444 $(SOURCE_DIR)/attributes/*h $(DESTDIR)/include
+	install  -m 0444 libweelogger.a $(DESTDIR)/lib
+
 
 # TODO: need to implement the proper C++ test
 cpp_test : $(WEE_LOGGER_OBJS) cpp_test.o
