@@ -102,6 +102,7 @@ install : wl_logger_lib
 	install  -m 0444 $(SOURCE_DIR)/*h $(DESTDIR)/include
 	install  -m 0444 $(SOURCE_DIR)/sinks/*h $(DESTDIR)/include
 	install  -m 0444 $(SOURCE_DIR)/attributes/*h $(DESTDIR)/include
+	install  -m 0444 $(SOURCE_DIR)/cpp/*h $(DESTDIR)/include
 	install  -m 0444 libweelogger.a $(DESTDIR)/lib
 
 
